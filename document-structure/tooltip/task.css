@@ -13,13 +13,10 @@
 
 .tooltip {
   position: fixed;
-  display: none;
-  background: black;
+  opacity: 0;
+  background: rgba(0, 0, 0, .8);
   padding: 5px;
   border-radius: 5px;
   color: #fff;
-}
-
-.tooltip_active {
-  display: block;
+  transition: .3s all;
 }
