@@ -22,7 +22,9 @@ button.addEventListener('click', e => {
 });
 
 window.addEventListener('load', () => {
-  tasksList.innerHTML = localStorage.getItem('tasks');
+  if (localStorage.hasOwnProperty('tasks')) {
+    tasksList.innerHTML = localStorage.getItem('tasks');
+  }
   remove();
 });
 
