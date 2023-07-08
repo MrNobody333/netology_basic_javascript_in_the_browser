@@ -13,12 +13,21 @@ xhr.addEventListener('load', () => {
     button.textContent = `${answer}`;
     answers.append(button);
   });
+
   const answer = [...document.querySelectorAll('.poll__answer')];
-  
+  const dialogMenu = document.querySelector('.dialog-menu');
+  const menuClose = document.querySelector('.dialog-menu__close');
+
   answer.forEach(el => {
     el.addEventListener('click', () => {
-      alert('Спасибо, ваш голос засчитан!');
+      dialogMenu.classList.add('dialog-menu_active');
     });
+  });
+
+  window.addEventListener('click', e => {
+    if (e.target === menuClose || e.target === dialogMenu) {
+      dialogMenu.classList.remove('dialog-menu_active');
+    }
   });
 });
 
