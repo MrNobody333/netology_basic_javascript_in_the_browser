@@ -80,11 +80,11 @@ button {
   color: #fff;
   background-color: #06f;
   border: 1px solid transparent;
-  border-radius: 2px;
+  border-radius: 5px;
   box-sizing: border-box;
   cursor: pointer;
   display: inline-block;
-  margin: 0 0 20px 0;
+  margin: 0 5px 20px 0;
   overflow: hidden;
   outline: none;
   padding: 8px 12px;
