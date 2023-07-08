@@ -49,7 +49,7 @@ a {
 
 .dialog-menu__title {
   padding: 20px;
-  border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   font-weight: 600;
   color: #00000077;
 }
