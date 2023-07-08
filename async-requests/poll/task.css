@@ -20,6 +20,10 @@ a {
   margin-bottom: 20px;
 }
 
+.poll__answers span {
+  font-weight: 700;
+}
+
 .dialog-menu {
   opacity: 0;
   visibility: hidden;
