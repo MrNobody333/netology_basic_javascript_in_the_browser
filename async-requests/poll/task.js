@@ -45,7 +45,7 @@ function postRequest(id, index) {
     const response = JSON.parse(xhr.response).stat;
 
     answers.innerHTML = '';
-    
+
     for (let res of response) {
       answers.innerHTML += `<p>${res.answer}: <span>${res.votes}%</span></p>`;
     }
