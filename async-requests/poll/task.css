@@ -49,11 +49,15 @@ a {
 
 .dialog-menu__title {
   padding: 20px;
-  border-bottom: 2px solid rgba(0, 0, 0, .2);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+  font-weight: 600;
+  color: #00000077;
 }
 
 .dialog-menu__close {
   display: block;
-  margin: 10px 0 0 320px;
-  color: #0000ff;
+  margin: 12px 0 0 320px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0084ff;
 }
