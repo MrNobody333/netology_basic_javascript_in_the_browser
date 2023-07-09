@@ -1,7 +1,7 @@
 const poll = document.querySelector('.poll__title');
 const answers = document.querySelector('.poll__answers');
 
-function getRequest() {
+(function() {
   const xhr = new XMLHttpRequest();
 
   xhr.addEventListener('load', () => {
@@ -35,8 +35,7 @@ function getRequest() {
 
   xhr.open('GET', 'https://students.netoservices.ru/nestjs-backend/poll');
   xhr.send();
-}
-getRequest()
+})();
 
 function postRequest(id, index) {
   const xhr = new XMLHttpRequest();
